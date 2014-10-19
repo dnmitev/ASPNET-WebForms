@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-03.ControlsOverview", "ControlsOverview\01-03.ControlsOverview.csproj", "{34564996-0629-4445-B157-9F1258C5769D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.Students", "Students\04.Students.csproj", "{01665AF4-5A03-4250-B2D6-ED663C838B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.Calculator", "Calculator\06.Calculator.csproj", "{7B51E38F-0CAB-4361-B35A-15CD0E7F9A01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34564996-0629-4445-B157-9F1258C5769D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34564996-0629-4445-B157-9F1258C5769D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34564996-0629-4445-B157-9F1258C5769D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34564996-0629-4445-B157-9F1258C5769D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01665AF4-5A03-4250-B2D6-ED663C838B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01665AF4-5A03-4250-B2D6-ED663C838B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01665AF4-5A03-4250-B2D6-ED663C838B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01665AF4-5A03-4250-B2D6-ED663C838B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B51E38F-0CAB-4361-B35A-15CD0E7F9A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B51E38F-0CAB-4361-B35A-15CD0E7F9A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B51E38F-0CAB-4361-B35A-15CD0E7F9A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B51E38F-0CAB-4361-B35A-15CD0E7F9A01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
