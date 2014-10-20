@@ -1,0 +1,25 @@
+﻿<%@ Master 
+    MasterPageFile="~/Site.Master"
+    Language="C#" 
+    AutoEventWireup="true" 
+    CodeBehind="Bulgaria.master.cs" 
+    Inherits="InternationalCompany.Bulgaria.Bulgaria" %>
+
+<asp:Content ID="BulgariaContentPageHeader" ContentPlaceHolderID="ContentPlaceHolderHeader" runat="server">
+    <header id="BulgariaHeader">
+        <h2>Пешо Програмист Корпорация</h2>
+    </header>
+</asp:Content>
+<asp:Content ID="BulgariaContentPage" ContentPlaceHolderID="ContentPlaceHolderPageContent" runat="server">
+    <aside id="bulgaria-sidebar">
+        <ul>
+            <li><a href="../../MainPage.aspx">Основна страница</a></li>
+            <li><a href="Home.aspx">Начало</a></li>
+            <li><a href="About.aspx">За нас</a></li>
+            <li><a href="Contacts.aspx">Контакти</a></li>            
+        </ul>
+    </aside>
+    <div class="content"> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderBulgaria" runat="server" />
+    </div>
+</asp:Content>

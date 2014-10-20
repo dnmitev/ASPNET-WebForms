@@ -1,0 +1,46 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Site.Master.cs"
+    Inherits="PersonalProfile.PersonalProfile" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>User Profile</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="UserProfile" runat="server">
+        <header id="header">
+            <h1 id="main-heading">Telerik Academy</h1>
+        </header>
+
+        <aside id="sidebar">
+            <div class="sidebar-title">Menu</div>
+            <ul>
+                <li>
+                    <a href="~/PersonalInfo.aspx" runat="server">Personal Info</a>
+                </li>
+                <li>
+                    <a href="~/Friends.aspx" runat="server">Friends</a>
+                </li>
+                <li>
+                    <a href="~/AdditonalInfo.aspx" runat="server">Additional Info</a>
+                </li>
+            </ul>
+        </aside>
+
+        <div id="mainContainer">
+            <asp:ContentPlaceHolder ID="MainContentPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer id="siteFooter">
+            &copy; 2014 Telerik Academy
+        </footer>
+    </form>
+</body>
+</html>

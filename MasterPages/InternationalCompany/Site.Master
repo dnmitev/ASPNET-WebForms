@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="InternationalCompany.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Pesho Dev Ltd</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="mainForm" runat="server">
+        <header id="header">
+            <h1 id="main-heading">Pesho Dev Ltd.</h1>
+        </header>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderHeader" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderPageContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer id="main-footer">
+            &copy; 2014 Pesho Dev Ltd.
+        </footer>
+    </form>
+</body>
+</html>
