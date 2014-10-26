@@ -1,0 +1,58 @@
+﻿<%@ Master
+    Language="C#"
+    AutoEventWireup="true"
+    CodeBehind="Site.master.cs"
+    Inherits="Company.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Company</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/amelia/bootstrap.min.css" rel="stylesheet"/>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+      <form id="homePage" runat="server">
+
+        <div class="navbar navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">Home</a>
+                    <asp:Menu 
+                        ID="NavigationMenu" 
+                        runat="server" 
+                        SkipLinkText=""
+                        EnableViewState="True" 
+                        IncludeStyleBlock="False" 
+                        Orientation="Horizontal" 
+                        DataSourceID="SiteMapDataSource" 
+                        StaticDisplayLevels="2">
+
+                        <DynamicMenuStyle CssClass="dropdown-menu" />
+
+                        <StaticMenuStyle CssClass="nav navbar-nav"/>
+                    </asp:Menu>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bs-component">
+                <asp:SiteMapPath class="breadcrumb" ID="SiteMapPathBreadcrump" runat="server" />
+            </div>
+            <div class="row">
+                <div class="col-md-9">
+                    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+</body>
+</html>
